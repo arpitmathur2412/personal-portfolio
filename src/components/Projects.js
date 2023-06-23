@@ -1,6 +1,6 @@
 import { Container, Row, Col, Tab} from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/resume-image.jpg";
+import projImg1 from "../assets/img/resume-3.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -25,8 +25,8 @@ export const Projects = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>About Me</h2>
                 <br></br>
-                <p style={{fontSize:"120%"}}>Hello everyone, and welcome to my website.
-                 My name is Arpit Mathur, and I am currently a student at [university name] pursuing a 
+                <p style={{textAlign:"justify",fontSize:"120%"}}>Hello everyone, and welcome to my website.
+                 My name is Arpit Mathur, and I am currently a student at PDEU, Gandhinagar pursuing a 
                  BTech degree in Computer Science and Engineering. 
                  I have a strong passion for this field, and I am particularly interested in data science
                   and web development. I am excited to share my knowledge and interests with you through this website
@@ -47,7 +47,7 @@ export const Projects = () => {
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
-                <p><strong>Above is the link to download my Resume</strong></p>
+                <p><strong>click on the card to download my Resume</strong></p>
               </div>}
             </TrackVisibility>
           </Col>

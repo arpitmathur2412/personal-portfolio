@@ -1,6 +1,6 @@
 import { Container, Row, Col, Tab} from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/resume-3.jpg";
+import projImg1 from "../assets/img/resume-img-3.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -10,13 +10,13 @@ export const Projects = () => {
   const projects = [
     {
       title: "Resume",
-      description: "",
+      description: "click to download",
       imgUrl: projImg1,
     }
   ];
 
   return (
-    <section className="project" id="project">
+    <section className="project" id="about">
       <Container>
         <Row>
           <Col size={6}>
@@ -28,14 +28,15 @@ export const Projects = () => {
                 <p style={{textAlign:"justify",fontSize:"120%"}}>Hello everyone, and welcome to my website.
                  My name is Arpit Mathur, and I am currently a student at PDEU, Gandhinagar pursuing a 
                  BTech degree in Computer Science and Engineering. 
-                 I have a strong passion for this field, and I am particularly interested in data science
-                  and web development. I am excited to share my knowledge and interests with you through this website
-                  , and I hope you will enjoy exploring it.</p>
+                 I am enthused by the vast potential of Computer science and its disciplines in the future and I am really 
+                 excited to share my knowledge and interests with you through this website.</p>
 
+                <p style={{textAlign:"justify",fontSize:"120%"}}>I am attaching my Resume below for recruiters 
+                and for people who would like to know more about my skills and expereiences. Feel free to contact me for any queries. Have a good day! :) </p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
-                        <div style={{display:"flex", justifyContent:"center", marginTop:"5%"}}>
+                        <div style={{width:"100%",display:"flex", justifyContent:"center", marginTop:"5%"}}>
                         {
                           projects.map((project, index) => {
                             return (

@@ -5,7 +5,6 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-// require("dotenv").config()
 import { serviceId,templateId,publicKey } from "./emailjs";
 
 export const Contact = () => {
@@ -30,14 +29,16 @@ export const Contact = () => {
     e.preventDefault();
     setButtonText("Sending...")
 
-    emailjs.sendForm({serviceId}, {templateId}, form.current, {publicKey})
+    emailjs.sendForm(serviceId, templateId, form.current, publicKey)
       .then((result) => {
           console.log(result.text);
-          setButtonText("Message Sent Successfully!")
+          setButtonText("Message Sent Successfully!") 
+
       }, (error) => {
-          console.log(error.text);
+          console.log(error.text); 
           setButtonText("Please try again")
       });
+      setFormDetails(formInitialDetails)
   };
 
   return (

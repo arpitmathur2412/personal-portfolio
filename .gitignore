@@ -26,4 +26,4 @@ yarn-error.log*
 .env
 
 #emailjs Credentials
-./src/components/emailjs
+/src/components/emailjs

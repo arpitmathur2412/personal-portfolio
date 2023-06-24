@@ -18,7 +18,7 @@ export const Footer = () => {
               <a style={{marginLeft:"5%",marginRight:"5%"}} alt="" target="blank" href="https://www.github.com/arpitmathur2412"><img style={{width:"50%",margin:"0%", padding:"0%"}} src={navIcon2} alt="" /></a>
               <a href="https://www.instagram.com/_arpit.mathur" alt="" target="blank"><img style={{width:"50%",margin:"0%", padding:"0%"}} src={navIcon3} alt="" /></a>
             </div>
-            <p style={{fontSize:"60%"}}>Images by freepik</p>
+            <p style={{fontSize:"60%"}}>Image by freepik</p>
           </Col>
         </Row>
       </Container>

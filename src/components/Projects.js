@@ -32,7 +32,7 @@ export const Projects = () => {
                  excited to share my knowledge and interests with you through this website.</p>
 
                 <p style={{fontSize:"120%"}}>I am attaching my Resume below for recruiters 
-                and for people who would like to know more about my skills and expereiences. Feel free to contact me for any queries. Have a good day! :) </p>
+                and for people who would like to know more about my skills and experiences. Feel free to contact me for any queries. Have a good day! :) </p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">

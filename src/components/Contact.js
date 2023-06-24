@@ -6,6 +6,7 @@ import TrackVisibility from 'react-on-screen';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 // require("dotenv").config()
+import { serviceId,templateId,publicKey } from "./emailjs";
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -29,7 +30,7 @@ export const Contact = () => {
     e.preventDefault();
     setButtonText("Sending...")
 
-    emailjs.sendForm('service_6l3g5x3', 'template_kgfx461', form.current, 'KECDOyEgarqRiEQjb')
+    emailjs.sendForm({serviceId}, {templateId}, form.current, {publicKey})
       .then((result) => {
           console.log(result.text);
           setButtonText("Message Sent Successfully!")

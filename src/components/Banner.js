@@ -18,7 +18,6 @@ export const Banner = () => {
     let ticker = setInterval(() => {
       tick();
     }, [delta]);
-
     return () => { clearInterval(ticker) };
   })
 
@@ -54,17 +53,17 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div style={{color:'#D4ADFC'}} className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h1>{`Hi! I'm Arpit,`}<br></br> <span className="txt-rotate" dataPeriod="2000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+              <div style={{color:'#D4ADFC'}} className="animate__animated animate__fadeIn">
+                <h1>{`Hi! I'm Arpit,`}<br></br> <span className="txt-rotate" dataPeriod="2000" data-rotate='[ "Web Developer", "Data Science Explorer" ]'><span className="wrap">{text}</span></span></h1>
                   <p></p>
                 <a style={{textDecoration:"none"}} href="#connect"><button onClick={() => console.log('connect')}>Let's Connect<ArrowRightCircle size={25} /></button></a>  
               </div>}
             </TrackVisibility>
           </Col>
-          <Col xs={12} md={6} xl={5}>
+          <Col xs={12} md={4} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                <div className="animate__animated animate__zoomIn">
                   <img src={headerImg} alt="Header Img"/>
                 </div>}
             </TrackVisibility>

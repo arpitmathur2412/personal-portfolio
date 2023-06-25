@@ -260,14 +260,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 16px;
   display: inline-block;
 }
-.banner h1 {
-  font-size: 65px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 1;
-  margin-bottom: 20px;
-  display: block;
+
+@media (min-width:1000px) {
+	.banner  h1{
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+  }
 }
+@media (max-width:500px) {
+	.banner  h1{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 10px;
+    display: block;
+    color: #C4B0FF;
+  }
+}
+
 .banner p {
   color: #B8B8B8;
   font-size: 18px;
@@ -503,7 +518,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.8px;
-  transition: 0.3s ease-in-out;
+  /* transition: 0.3s ease-in-out; */
 }
 .contact form input:focus, .contact form textarea:focus {
   background: rgba(255, 255, 255, 1);
@@ -527,7 +542,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 25px;
   border-radius: 0;
   position: relative;
-  transition: 0.3s ease-in-out;
+  /* transition: 0.3s ease-in-out; */
 }
 .contact form button span {
   z-index: 1;
@@ -545,7 +560,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   top: 0;
   left: 0;
   z-index: 0;
-  transition: 0.3s ease-in-out;
+  /* transition: 0.3s ease-in-out; */
 }
 .contact form button:hover::before {
   width: 100%;

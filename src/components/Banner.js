@@ -54,7 +54,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div style={{color:'#D4ADFC'}} className="animate__animated animate__fadeIn">
-                <h1>{`Hi! I'm Arpit,`}<br></br> <span className="txt-rotate" dataPeriod="2000" data-rotate='[ "Web Developer", "Data Science Explorer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hi! I'm Arpit,`}<br></br> <span className="txt-rotate" dataperiod="2000" data-rotate='[ "Web Developer", "Data Science Explorer" ]'><span className="wrap">{text}</span></span></h1>
                   <p></p>
                 <a style={{textDecoration:"none"}} href="#connect"><button onClick={() => console.log('connect')}>Let's Connect<ArrowRightCircle size={25} /></button></a>  
               </div>}
@@ -64,7 +64,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className="animate__animated animate__zoomIn">
-                  <img src={headerImg} alt="Header Img"/>
+                  <img style={{width:"100%"}} src={headerImg} alt="Header Img"/>
                 </div>}
             </TrackVisibility>
           </Col>

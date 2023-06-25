@@ -246,7 +246,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 0;
   padding: 260px 0 100px 0;
   background-image: url('./assets/img/bg-3.jpg');
-  background-position: top center;
+  background-position: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -271,7 +271,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     display: block;
   }
 }
-@media (max-width:500px) {
+@media (max-width:800px) {
 	.banner  h1{
     font-size: 50px;
     font-weight: 700;

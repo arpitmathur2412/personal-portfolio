@@ -5,7 +5,7 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { serviceId,templateId,publicKey } from "./emailjs";
+// import { serviceId,templateId,publicKey } from "./emailjs";
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -29,7 +29,7 @@ export const Contact = () => {
     e.preventDefault();
     setButtonText("Sending...")
 
-    emailjs.sendForm(serviceId, templateId, form.current, publicKey)
+    emailjs.sendForm(process.env.REACT_APP_SERVICEID,process.env.REACT_APP_TEMPLATEID , form.current, process.env.REACT_APP_PUBLICKEY)
       .then((result) => {
           console.log(result.text);
           setButtonText("Message Sent Successfully!") 

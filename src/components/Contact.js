@@ -5,7 +5,6 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-// import { serviceId,templateId,publicKey } from "./emailjs";
 
 export const Contact = () => {
   const formInitialDetails = {

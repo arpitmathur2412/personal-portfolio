@@ -29,7 +29,7 @@ export const Contact = () => {
     setButtonText("Sending...")
 
     emailjs.sendForm(process.env.REACT_APP_SERVICEID,process.env.REACT_APP_TEMPLATEID , form.current, process.env.REACT_APP_PUBLICKEY)
-      .then((result) => {
+      .then((result) => {             
           console.log(result.text);
           setButtonText("Message Sent Successfully!") 
 
